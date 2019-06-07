@@ -1,4 +1,4 @@
-# build helper Oracle Database Express Edition for docker
+# build helper Oracle Database Express Edition for docker (11gR2)
 
 ## require
 
