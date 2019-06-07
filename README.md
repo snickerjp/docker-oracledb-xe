@@ -1,0 +1,25 @@
+# build helper Oracle Database Express Edition for docker
+
+## require
+
+- Download `oracle-xe-11.2.0-1.0.x86_64.rpm.zip` from Oracle site.
+
+into path -> `docker-images/OracleDatabase/SingleInstance/dockerfiles/11.2.0.2/oracle-xe-11.2.0-1.0.x86_64.rpm.zip`
+
+- docker-compose
+
+## build
+
+```sh
+sh create-oracleDB-XE.sh
+```
+
+## use
+
+```sh
+docker-compose up
+```
+
+## reference
+
+- [docker\-images/OracleDatabase/SingleInstance at master · oracle/docker\-images](https://github.com/oracle/docker-images/tree/master/OracleDatabase/SingleInstance)
