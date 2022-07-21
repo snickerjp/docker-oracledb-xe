@@ -23,6 +23,11 @@ vim .env
 docker compose up
 ```
 
+if not login
+```sh
+docker compose exec oracle-xe /opt/oracle/setPassword.sh <your password>
+```
+
 ## reference
 
 - for 21c [docker\-images/OracleDatabase/SingleInstance at main · oracle/docker\-images](https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance#building-oracle-database-container-images)
