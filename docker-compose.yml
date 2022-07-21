@@ -1,18 +1,15 @@
 version: '2'
 services:
   oracle-xe:
-    image: oracle/database:11.2.0.2-xe
+    image: oracle/database:21.3.0-xe
     restart: always
-    shm_size: '2gb'
     volumes:
-      #- /opt/oracle-data:/opt/oracle/oradata # for Enterprise Edition
-      - /opt/oracle-data:/u01/app/oracle/oradata # for Express Edition
+      - ${ORACLE_MOUNT}:/opt/oracle/oradata
     environment:
       - ORACLE_SID=XE # Express Edition Docker-image hard cording
-      - ORACLE_PDB=<your PDB>
-      - ORACLE_PWD=<your password>
-      - ORACLE_CHARACTERSET=<your charset>
+      - ORACLE_PDB=XEPDB1 # Express Edition Docker-image hard cording
+      - ORACLE_PWD=${ORACLE_PWD}
+      - ORACLE_CHARACTERSET=${ORACLE_CHARACTERSET}
     ports:
       - "1521:1521"
-      # - "5500:5500" # for Enterprise Edition
-      - "8080:8080" # for Express Edition
+      - "5500:5500" # for Enterprise Manager
