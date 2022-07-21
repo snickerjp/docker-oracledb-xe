@@ -3,6 +3,7 @@ services:
   oracle-xe:
     image: oracle/database:21.3.0-xe
     restart: always
+#   network_mode: host # if host network
     volumes:
       - ${ORACLE_MOUNT}:/opt/oracle/oradata
     environment:
