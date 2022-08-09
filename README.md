@@ -22,4 +22,4 @@ docker-compose up
 
 ## reference
 
-- for 11gR2 [docker\-images/OracleDatabase/SingleInstance at master · oracle/docker\-images](https://github.com/oracle/docker-images/tree/master/OracleDatabase/SingleInstance#running-oracle-database-11gr2-express-edition-in-a-docker-container)
+- for 11gR2 [docker\-images/OracleDatabase/SingleInstance at main · oracle/docker\-images](https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance#running-oracle-database-11gr2-express-edition-in-a-container)
