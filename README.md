@@ -2,8 +2,8 @@
 
 ## require
 
-	- docker engine
-	- docker-compose
+  - docker engine
+  - docker-compose
 
 ## build
 
@@ -30,4 +30,4 @@ docker compose exec oracle-xe /opt/oracle/setPassword.sh <your password>
 
 ## reference
 
-	- for 21c [docker\-images/OracleDatabase/SingleInstance at main · oracle/docker\-images](https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance#building-oracle-database-container-images)
+  - for 21c [docker\-images/OracleDatabase/SingleInstance at main · oracle/docker\-images](https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance#building-oracle-database-container-images)
