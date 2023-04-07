@@ -3,7 +3,6 @@ services:
   oracle-xe:
     image: oracle/database:21.3.0-xe
     restart: always
-#   network_mode: host # if host network
     volumes:
       - ${ORACLE_MOUNT}:/opt/oracle/oradata
     environment:
@@ -14,3 +13,4 @@ services:
     ports:
       - "1521:1521"
       - "5500:5500" # for Enterprise Manager
+#   network_mode: host # if use host network_mode and disabled [ports] section.
