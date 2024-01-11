@@ -1,0 +1,17 @@
+version: '2'
+services:
+  oracle-xe:
+    image: oracle/database:23.3.0-xe
+    restart: always
+    container_name: oracle
+    volumes:
+      - ${ORACLE_MOUNT}:/opt/oracle/oradata
+    environment:
+      - ORACLE_SID=FREE # Free Edition Docker-image hard cording
+      - ORACLE_PDB=FREEPDB1 # Free Edition Docker-image hard cording
+      - ORACLE_PWD=${ORACLE_PWD}
+      - ORACLE_CHARACTERSET=${ORACLE_CHARACTERSET}
+    ports:
+      - "1521:1521"
+      - "5500:5500" # for Enterprise Manager
+#   network_mode: host # if use host network_mode and disabled [ports] section.
