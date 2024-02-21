@@ -25,12 +25,21 @@ vim .env
 ```
 - 21c
 ```sh
+ln -s compose.21c.yaml compose.yaml
 docker compose up
+
+OR
+docker compose -f compose.21c.yaml up
 ```
 
 - 23c
 ```sh
-docker compose -f docker-compose.23c.yml up
+ln -s compose.23c.yaml compose.yaml
+docker compose up
+
+OR
+
+docker compose -f compose.23c.yaml up
 ```
 
 if not login
