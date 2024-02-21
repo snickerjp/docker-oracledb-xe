@@ -29,6 +29,7 @@ ln -s compose.21c.yaml compose.yaml
 docker compose up
 
 OR
+
 docker compose -f compose.21c.yaml up
 ```
 
