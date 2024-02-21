@@ -1,7 +1,7 @@
 version: '2'
 services:
   oracle-xe:
-    image: oracle/database:23.3.0-xe
+    image: oracle/database:23.3.0-free
     restart: always
     container_name: oracle
     volumes:
